@@ -9,8 +9,26 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        Text("Hello, world!")
-            .padding()
+        NavigationView {
+            List {
+                // 代办时间列表
+                
+            }.navigationBarTitleDisplayMode(.inline)
+            .toolbar {
+                    ToolbarItem(placement: .principal) {
+                        // 顶部工具栏
+                        HStack {
+                            Spacer()
+                            Button(action: {
+                                // 添加待办事项
+                                
+                            }) {
+                                Image(systemName: "plus")
+                            }
+                        }
+                    }
+                }
+        }
     }
 }
 
