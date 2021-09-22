@@ -13,6 +13,7 @@
 		3EB85BEF26F8F5C80002E934 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3EB85BEE26F8F5C80002E934 /* Preview Assets.xcassets */; };
 		AA25425C26FA33AA00DF9B1E /* timer.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA25425B26FA33AA00DF9B1E /* timer.swift */; };
 		AA32966326FB7F7800BE0C72 /* AboutDevelopers.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA32966226FB7F7800BE0C72 /* AboutDevelopers.swift */; };
+		AA5DB60E26FB8FD7003501D2 /* SlideLeftMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA5DB60D26FB8FD7003501D2 /* SlideLeftMenu.swift */; };
 		AA74B9DC26F9A66900ED6EE7 /* WebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA74B9DB26F9A66900ED6EE7 /* WebView.swift */; };
 /* End PBXBuildFile section */
 
@@ -27,6 +28,7 @@
 		3EB85BF726F9013F0002E934 /* WORKX.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = WORKX.entitlements; sourceTree = "<group>"; };
 		AA25425B26FA33AA00DF9B1E /* timer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = timer.swift; sourceTree = "<group>"; };
 		AA32966226FB7F7800BE0C72 /* AboutDevelopers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutDevelopers.swift; sourceTree = "<group>"; };
+		AA5DB60D26FB8FD7003501D2 /* SlideLeftMenu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SlideLeftMenu.swift; sourceTree = "<group>"; };
 		AA74B9DB26F9A66900ED6EE7 /* WebView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -78,6 +80,7 @@
 			children = (
 				3EB85BEE26F8F5C80002E934 /* Preview Assets.xcassets */,
 				AA32966226FB7F7800BE0C72 /* AboutDevelopers.swift */,
+				AA5DB60D26FB8FD7003501D2 /* SlideLeftMenu.swift */,
 			);
 			path = "Preview Content";
 			sourceTree = "<group>";
@@ -153,6 +156,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				AA74B9DC26F9A66900ED6EE7 /* WebView.swift in Sources */,
+				AA5DB60E26FB8FD7003501D2 /* SlideLeftMenu.swift in Sources */,
 				3EB85BEA26F8F5C70002E934 /* ContentView.swift in Sources */,
 				AA32966326FB7F7800BE0C72 /* AboutDevelopers.swift in Sources */,
 				3EB85BE826F8F5C70002E934 /* WORKXApp.swift in Sources */,
