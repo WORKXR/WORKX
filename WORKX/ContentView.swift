@@ -7,6 +7,8 @@
 
 import SwiftUI
 
+
+
 struct ContentView: View {
     var body: some View {
         NavigationView {
@@ -20,20 +22,40 @@ struct ContentView: View {
                         HStack {
                             Spacer()
                             Button(action: {
-                                // 添加待办事项
+                                // 呼出左侧面板
                                 
                             }) {
-                                Image(systemName: "plus")
+                                Image(systemName: "rectangle.portrait.and.arrow.right")
+                                    .foregroundColor(Color.green)
+                                    .padding(.trailing, 13.0)
                             }
-                        }
+                            
+                            Spacer()
+                                .padding(.leading)
+                            
+                                Button(action: {
+                                    // 添加待办事项
+                                    
+                                }) {
+                                    Image(systemName: "plus")
+                                }
+                                
+                        
+                        
+                            
+                                
+                               
                     }
                 }
+            }
         }
+        .padding(.leading)
     }
 }
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         ContentView()
+            .preferredColorScheme(.light)
     }
 }
