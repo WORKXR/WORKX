@@ -9,7 +9,63 @@ import SwiftUI
 
 struct AboutDevelopers: View {
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        VStack{
+            
+            HStack{
+        
+                VStack{
+                    Image("WUTONK")
+                    .resizable()
+                    .aspectRatio(contentMode: .fill)
+                    .frame(width: 100, height: 100)
+                    .clipShape(Circle())
+                    Text("WUTONK")
+                    
+                }
+                .padding(.trailing)
+                    
+                    VStack{
+                        Image("cubik65535")
+                        .resizable()
+                        .aspectRatio(contentMode: .fill)
+                        .frame(width: 100, height: 100)
+                        .clipShape(Circle())
+                        Text("cubik65535")
+                        
+                    }
+                    .padding(.leading, 100.0)
+                }
+              
+            VStack{
+                Text("关于APP")
+                    .background(Color.gray)
+                    .font(.title)
+                    .cornerRadius(10)
+                    .shadow(radius:10)
+                    .padding()
+            }
+            .padding(.top)
+            Spacer()
+            
+            
+        }
+        .padding(.bottom)
+        
+        
+            
+                
+            
+                
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
     }
 }
 
