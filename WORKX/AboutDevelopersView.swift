@@ -7,29 +7,39 @@
 
 import SwiftUI
 
-struct AboutDevelopers: View {
+struct AboutDevelopersView: View {
     var body: some View {
         VStack{
             
+            VStack{
+                Text("开发者")
+                    .background(Color.gray)
+                    .font(.title)
+                    .cornerRadius(10)
+                    .shadow(radius:10)
+                    .padding()
+            }
+            
             HStack{
         
+                
                 VStack{
                     Image("WUTONK")
-                    .resizable()
-                    .aspectRatio(contentMode: .fill)
-                    .frame(width: 100, height: 100)
-                    .clipShape(Circle())
-                    Text("WUTONK")
-                    
-                }
-                .padding(.trailing)
-                    
-                    VStack{
-                        Image("cubik65535")
                         .resizable()
                         .aspectRatio(contentMode: .fill)
                         .frame(width: 100, height: 100)
                         .clipShape(Circle())
+                    Text("WUTONK")
+                    
+                }
+                .padding()
+                    
+                    VStack{
+                        Image("cubik65535")
+                            .resizable()
+                            .aspectRatio(contentMode: .fill)
+                            .frame(width: 100, height: 100)
+                            .clipShape(Circle())
                         Text("cubik65535")
                         
                     }
@@ -43,6 +53,22 @@ struct AboutDevelopers: View {
                     .cornerRadius(10)
                     .shadow(radius:10)
                     .padding()
+            }
+            
+            VStack{
+                Text("此APP的维护工作室:https://github.com/WORKXR")
+                    .padding()
+                Text("此APP的项目地址:https://github.com/WORKXR/WORKX")
+                
+                
+            }
+            
+            VStack{
+                
+                Text("感谢支持我们的APP")
+                    .font(.title2)
+                
+                
             }
             .padding(.top)
             Spacer()
@@ -69,9 +95,9 @@ struct AboutDevelopers: View {
     }
 }
 
-struct AboutDevelopers_Previews: PreviewProvider {
+struct AboutDevelopersView_Previews: PreviewProvider {
     static var previews: some View {
-        AboutDevelopers()
+        AboutDevelopersView()
     }
 }
 

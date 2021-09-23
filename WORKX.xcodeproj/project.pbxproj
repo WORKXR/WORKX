@@ -14,7 +14,7 @@
 		3EC0246526FC059A002D7DA9 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EC0246426FC059A002D7DA9 /* main.swift */; };
 		3EC0246B26FC0734002D7DA9 /* DateUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA25425B26FA33AA00DF9B1E /* DateUtil.swift */; };
 		AA25425C26FA33AA00DF9B1E /* DateUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA25425B26FA33AA00DF9B1E /* DateUtil.swift */; };
-		AA32966326FB7F7800BE0C72 /* AboutDevelopers.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA32966226FB7F7800BE0C72 /* AboutDevelopers.swift */; };
+		AA32966326FB7F7800BE0C72 /* AboutDevelopersView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA32966226FB7F7800BE0C72 /* AboutDevelopersView.swift */; };
 		AA5DB60E26FB8FD7003501D2 /* SlideLeftMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA5DB60D26FB8FD7003501D2 /* SlideLeftMenu.swift */; };
 		AA74B9DC26F9A66900ED6EE7 /* WebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA74B9DB26F9A66900ED6EE7 /* WebView.swift */; };
 /* End PBXBuildFile section */
@@ -43,7 +43,7 @@
 		3EC0246226FC059A002D7DA9 /* WORKXTest */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = WORKXTest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3EC0246426FC059A002D7DA9 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		AA25425B26FA33AA00DF9B1E /* DateUtil.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateUtil.swift; sourceTree = "<group>"; };
-		AA32966226FB7F7800BE0C72 /* AboutDevelopers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutDevelopers.swift; sourceTree = "<group>"; };
+		AA32966226FB7F7800BE0C72 /* AboutDevelopersView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutDevelopersView.swift; sourceTree = "<group>"; };
 		AA5DB60D26FB8FD7003501D2 /* SlideLeftMenu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SlideLeftMenu.swift; sourceTree = "<group>"; };
 		AA74B9DB26F9A66900ED6EE7 /* WebView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -94,7 +94,7 @@
 				3EB85BE726F8F5C70002E934 /* WORKXApp.swift */,
 				3EB85BE926F8F5C70002E934 /* ContentView.swift */,
 				AA74B9DB26F9A66900ED6EE7 /* WebView.swift */,
-				AA32966226FB7F7800BE0C72 /* AboutDevelopers.swift */,
+				AA32966226FB7F7800BE0C72 /* AboutDevelopersView.swift */,
 				AA5DB60D26FB8FD7003501D2 /* SlideLeftMenu.swift */,
 				3EB85BEB26F8F5C80002E934 /* Assets.xcassets */,
 				3EB85BED26F8F5C80002E934 /* Preview Content */,
@@ -212,7 +212,7 @@
 				AA74B9DC26F9A66900ED6EE7 /* WebView.swift in Sources */,
 				AA5DB60E26FB8FD7003501D2 /* SlideLeftMenu.swift in Sources */,
 				3EB85BEA26F8F5C70002E934 /* ContentView.swift in Sources */,
-				AA32966326FB7F7800BE0C72 /* AboutDevelopers.swift in Sources */,
+				AA32966326FB7F7800BE0C72 /* AboutDevelopersView.swift in Sources */,
 				3EB85BE826F8F5C70002E934 /* WORKXApp.swift in Sources */,
 				AA25425C26FA33AA00DF9B1E /* DateUtil.swift in Sources */,
 			);
