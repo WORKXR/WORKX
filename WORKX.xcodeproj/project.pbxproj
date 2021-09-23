@@ -11,11 +11,25 @@
 		3EB85BEA26F8F5C70002E934 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EB85BE926F8F5C70002E934 /* ContentView.swift */; };
 		3EB85BEC26F8F5C80002E934 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3EB85BEB26F8F5C80002E934 /* Assets.xcassets */; };
 		3EB85BEF26F8F5C80002E934 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3EB85BEE26F8F5C80002E934 /* Preview Assets.xcassets */; };
-		AA25425C26FA33AA00DF9B1E /* timer.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA25425B26FA33AA00DF9B1E /* timer.swift */; };
+		3EC0246526FC059A002D7DA9 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EC0246426FC059A002D7DA9 /* main.swift */; };
+		3EC0246B26FC0734002D7DA9 /* DateUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA25425B26FA33AA00DF9B1E /* DateUtil.swift */; };
+		AA25425C26FA33AA00DF9B1E /* DateUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA25425B26FA33AA00DF9B1E /* DateUtil.swift */; };
 		AA32966326FB7F7800BE0C72 /* AboutDevelopers.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA32966226FB7F7800BE0C72 /* AboutDevelopers.swift */; };
 		AA5DB60E26FB8FD7003501D2 /* SlideLeftMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA5DB60D26FB8FD7003501D2 /* SlideLeftMenu.swift */; };
 		AA74B9DC26F9A66900ED6EE7 /* WebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA74B9DB26F9A66900ED6EE7 /* WebView.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		3EC0246026FC059A002D7DA9 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		3EB85BE426F8F5C70002E934 /* WORKX.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WORKX.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -26,7 +40,9 @@
 		3EB85BF526F8F5F50002E934 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		3EB85BF626F8F9A20002E934 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		3EB85BF726F9013F0002E934 /* WORKX.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = WORKX.entitlements; sourceTree = "<group>"; };
-		AA25425B26FA33AA00DF9B1E /* timer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = timer.swift; sourceTree = "<group>"; };
+		3EC0246226FC059A002D7DA9 /* WORKXTest */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = WORKXTest; sourceTree = BUILT_PRODUCTS_DIR; };
+		3EC0246426FC059A002D7DA9 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		AA25425B26FA33AA00DF9B1E /* DateUtil.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateUtil.swift; sourceTree = "<group>"; };
 		AA32966226FB7F7800BE0C72 /* AboutDevelopers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutDevelopers.swift; sourceTree = "<group>"; };
 		AA5DB60D26FB8FD7003501D2 /* SlideLeftMenu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SlideLeftMenu.swift; sourceTree = "<group>"; };
 		AA74B9DB26F9A66900ED6EE7 /* WebView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebView.swift; sourceTree = "<group>"; };
@@ -40,6 +56,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		3EC0245F26FC059A002D7DA9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -47,6 +70,7 @@
 			isa = PBXGroup;
 			children = (
 				3EB85BF526F8F5F50002E934 /* README.md */,
+				3EC0246326FC059A002D7DA9 /* WORKXTest */,
 				3EB85BE626F8F5C70002E934 /* WORKX */,
 				3EB85BE526F8F5C70002E934 /* Products */,
 			);
@@ -56,6 +80,7 @@
 			isa = PBXGroup;
 			children = (
 				3EB85BE426F8F5C70002E934 /* WORKX.app */,
+				3EC0246226FC059A002D7DA9 /* WORKXTest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -65,12 +90,14 @@
 			children = (
 				3EB85BF726F9013F0002E934 /* WORKX.entitlements */,
 				3EB85BF626F8F9A20002E934 /* Info.plist */,
+				AA25425B26FA33AA00DF9B1E /* DateUtil.swift */,
 				3EB85BE726F8F5C70002E934 /* WORKXApp.swift */,
 				3EB85BE926F8F5C70002E934 /* ContentView.swift */,
 				AA74B9DB26F9A66900ED6EE7 /* WebView.swift */,
+				AA32966226FB7F7800BE0C72 /* AboutDevelopers.swift */,
+				AA5DB60D26FB8FD7003501D2 /* SlideLeftMenu.swift */,
 				3EB85BEB26F8F5C80002E934 /* Assets.xcassets */,
 				3EB85BED26F8F5C80002E934 /* Preview Content */,
-				AA25425B26FA33AA00DF9B1E /* timer.swift */,
 			);
 			path = WORKX;
 			sourceTree = "<group>";
@@ -79,10 +106,16 @@
 			isa = PBXGroup;
 			children = (
 				3EB85BEE26F8F5C80002E934 /* Preview Assets.xcassets */,
-				AA32966226FB7F7800BE0C72 /* AboutDevelopers.swift */,
-				AA5DB60D26FB8FD7003501D2 /* SlideLeftMenu.swift */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		3EC0246326FC059A002D7DA9 /* WORKXTest */ = {
+			isa = PBXGroup;
+			children = (
+				3EC0246426FC059A002D7DA9 /* main.swift */,
+			);
+			path = WORKXTest;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -105,6 +138,23 @@
 			productReference = 3EB85BE426F8F5C70002E934 /* WORKX.app */;
 			productType = "com.apple.product-type.application";
 		};
+		3EC0246126FC059A002D7DA9 /* WORKXTest */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3EC0246626FC059A002D7DA9 /* Build configuration list for PBXNativeTarget "WORKXTest" */;
+			buildPhases = (
+				3EC0245E26FC059A002D7DA9 /* Sources */,
+				3EC0245F26FC059A002D7DA9 /* Frameworks */,
+				3EC0246026FC059A002D7DA9 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = WORKXTest;
+			productName = WORKXTest;
+			productReference = 3EC0246226FC059A002D7DA9 /* WORKXTest */;
+			productType = "com.apple.product-type.tool";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -116,6 +166,9 @@
 				LastUpgradeCheck = 1300;
 				TargetAttributes = {
 					3EB85BE326F8F5C70002E934 = {
+						CreatedOnToolsVersion = 13.0;
+					};
+					3EC0246126FC059A002D7DA9 = {
 						CreatedOnToolsVersion = 13.0;
 					};
 				};
@@ -134,6 +187,7 @@
 			projectRoot = "";
 			targets = (
 				3EB85BE326F8F5C70002E934 /* WORKX */,
+				3EC0246126FC059A002D7DA9 /* WORKXTest */,
 			);
 		};
 /* End PBXProject section */
@@ -160,7 +214,16 @@
 				3EB85BEA26F8F5C70002E934 /* ContentView.swift in Sources */,
 				AA32966326FB7F7800BE0C72 /* AboutDevelopers.swift in Sources */,
 				3EB85BE826F8F5C70002E934 /* WORKXApp.swift in Sources */,
-				AA25425C26FA33AA00DF9B1E /* timer.swift in Sources */,
+				AA25425C26FA33AA00DF9B1E /* DateUtil.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3EC0245E26FC059A002D7DA9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3EC0246526FC059A002D7DA9 /* main.swift in Sources */,
+				3EC0246B26FC0734002D7DA9 /* DateUtil.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -353,6 +416,32 @@
 			};
 			name = Release;
 		};
+		3EC0246726FC059A002D7DA9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = QT93JJ48BC;
+				ENABLE_HARDENED_RUNTIME = YES;
+				MACOSX_DEPLOYMENT_TARGET = 11.3;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		3EC0246826FC059A002D7DA9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = QT93JJ48BC;
+				ENABLE_HARDENED_RUNTIME = YES;
+				MACOSX_DEPLOYMENT_TARGET = 11.3;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -370,6 +459,15 @@
 			buildConfigurations = (
 				3EB85BF326F8F5C80002E934 /* Debug */,
 				3EB85BF426F8F5C80002E934 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3EC0246626FC059A002D7DA9 /* Build configuration list for PBXNativeTarget "WORKXTest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3EC0246726FC059A002D7DA9 /* Debug */,
+				3EC0246826FC059A002D7DA9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
