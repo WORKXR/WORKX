@@ -11,8 +11,13 @@ struct AboutDevelopersView: View {
     var body: some View {
         VStack{
             
+            HStack {
+                    Image(systemName: "rectangle.portrait.and.arrow.right")
+                       
+                }
+                
             VStack{
-                Text("开发者")
+                Text(" 开发者 ")
                     .background(Color.gray)
                     .font(.title)
                     .cornerRadius(10)
@@ -47,7 +52,7 @@ struct AboutDevelopersView: View {
                 }
               
             VStack{
-                Text("关于APP")
+                Text("  关于APP  ")
                     .background(Color.gray)
                     .font(.title)
                     .cornerRadius(10)

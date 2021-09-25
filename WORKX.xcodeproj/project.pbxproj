@@ -15,8 +15,12 @@
 		3EC0246B26FC0734002D7DA9 /* DateUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA25425B26FA33AA00DF9B1E /* DateUtil.swift */; };
 		AA25425C26FA33AA00DF9B1E /* DateUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA25425B26FA33AA00DF9B1E /* DateUtil.swift */; };
 		AA32966326FB7F7800BE0C72 /* AboutDevelopersView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA32966226FB7F7800BE0C72 /* AboutDevelopersView.swift */; };
+		AA442B0826FF4D310079DC18 /* Todoltem.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA442B0726FF4D310079DC18 /* Todoltem.swift */; };
+		AA442B0A26FF4D850079DC18 /* DateChinese.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA442B0926FF4D850079DC18 /* DateChinese.swift */; };
 		AA5DB60E26FB8FD7003501D2 /* SlideLeftMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA5DB60D26FB8FD7003501D2 /* SlideLeftMenu.swift */; };
 		AA74B9DC26F9A66900ED6EE7 /* WebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA74B9DB26F9A66900ED6EE7 /* WebView.swift */; };
+		AA9B4A9226FCADB400661BF2 /* HelpDevelopersView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA9B4A9126FCADB400661BF2 /* HelpDevelopersView.swift */; };
+		AAF34BC926FD82F6007DF865 /* TypeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAF34BC826FD82F6007DF865 /* TypeView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -44,8 +48,12 @@
 		3EC0246426FC059A002D7DA9 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		AA25425B26FA33AA00DF9B1E /* DateUtil.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateUtil.swift; sourceTree = "<group>"; };
 		AA32966226FB7F7800BE0C72 /* AboutDevelopersView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutDevelopersView.swift; sourceTree = "<group>"; };
+		AA442B0726FF4D310079DC18 /* Todoltem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Todoltem.swift; sourceTree = "<group>"; };
+		AA442B0926FF4D850079DC18 /* DateChinese.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateChinese.swift; sourceTree = "<group>"; };
 		AA5DB60D26FB8FD7003501D2 /* SlideLeftMenu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SlideLeftMenu.swift; sourceTree = "<group>"; };
 		AA74B9DB26F9A66900ED6EE7 /* WebView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebView.swift; sourceTree = "<group>"; };
+		AA9B4A9126FCADB400661BF2 /* HelpDevelopersView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelpDevelopersView.swift; sourceTree = "<group>"; };
+		AAF34BC826FD82F6007DF865 /* TypeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TypeView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,6 +78,7 @@
 			isa = PBXGroup;
 			children = (
 				3EB85BF526F8F5F50002E934 /* README.md */,
+				AA442B0626FF4D000079DC18 /* TODO */,
 				3EC0246326FC059A002D7DA9 /* WORKXTest */,
 				3EB85BE626F8F5C70002E934 /* WORKX */,
 				3EB85BE526F8F5C70002E934 /* Products */,
@@ -90,12 +99,14 @@
 			children = (
 				3EB85BF726F9013F0002E934 /* WORKX.entitlements */,
 				3EB85BF626F8F9A20002E934 /* Info.plist */,
+				AAF34BC826FD82F6007DF865 /* TypeView.swift */,
 				AA25425B26FA33AA00DF9B1E /* DateUtil.swift */,
 				3EB85BE726F8F5C70002E934 /* WORKXApp.swift */,
 				3EB85BE926F8F5C70002E934 /* ContentView.swift */,
 				AA74B9DB26F9A66900ED6EE7 /* WebView.swift */,
 				AA32966226FB7F7800BE0C72 /* AboutDevelopersView.swift */,
 				AA5DB60D26FB8FD7003501D2 /* SlideLeftMenu.swift */,
+				AA9B4A9126FCADB400661BF2 /* HelpDevelopersView.swift */,
 				3EB85BEB26F8F5C80002E934 /* Assets.xcassets */,
 				3EB85BED26F8F5C80002E934 /* Preview Content */,
 			);
@@ -114,8 +125,17 @@
 			isa = PBXGroup;
 			children = (
 				3EC0246426FC059A002D7DA9 /* main.swift */,
+				AA442B0926FF4D850079DC18 /* DateChinese.swift */,
 			);
 			path = WORKXTest;
+			sourceTree = "<group>";
+		};
+		AA442B0626FF4D000079DC18 /* TODO */ = {
+			isa = PBXGroup;
+			children = (
+				AA442B0726FF4D310079DC18 /* Todoltem.swift */,
+			);
+			path = TODO;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -209,11 +229,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AA9B4A9226FCADB400661BF2 /* HelpDevelopersView.swift in Sources */,
 				AA74B9DC26F9A66900ED6EE7 /* WebView.swift in Sources */,
 				AA5DB60E26FB8FD7003501D2 /* SlideLeftMenu.swift in Sources */,
 				3EB85BEA26F8F5C70002E934 /* ContentView.swift in Sources */,
+				AA442B0826FF4D310079DC18 /* Todoltem.swift in Sources */,
 				AA32966326FB7F7800BE0C72 /* AboutDevelopersView.swift in Sources */,
 				3EB85BE826F8F5C70002E934 /* WORKXApp.swift in Sources */,
+				AAF34BC926FD82F6007DF865 /* TypeView.swift in Sources */,
 				AA25425C26FA33AA00DF9B1E /* DateUtil.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -224,6 +247,7 @@
 			files = (
 				3EC0246526FC059A002D7DA9 /* main.swift in Sources */,
 				3EC0246B26FC0734002D7DA9 /* DateUtil.swift in Sources */,
+				AA442B0A26FF4D850079DC18 /* DateChinese.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
