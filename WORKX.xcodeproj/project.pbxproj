@@ -19,7 +19,11 @@
 		AA442B0A26FF4D850079DC18 /* DateChinese.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA442B0926FF4D850079DC18 /* DateChinese.swift */; };
 		AA5DB60E26FB8FD7003501D2 /* SlideLeftMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA5DB60D26FB8FD7003501D2 /* SlideLeftMenu.swift */; };
 		AA74B9DC26F9A66900ED6EE7 /* WebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA74B9DB26F9A66900ED6EE7 /* WebView.swift */; };
+		AA90866F27112C9000524711 /* NavigationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA90866E27112C9000524711 /* NavigationView.swift */; };
 		AA9B4A9226FCADB400661BF2 /* HelpDevelopersView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA9B4A9126FCADB400661BF2 /* HelpDevelopersView.swift */; };
+		AAB01DE526FF7B9F0044B669 /* Types.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAB01DE426FF7B9F0044B669 /* Types.swift */; };
+		AAC73EB927130A08005C2C95 /* NavigationView2.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAC73EB827130A07005C2C95 /* NavigationView2.swift */; };
+		AAC73EBC27131546005C2C95 /* Navigate3.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAC73EBB27131546005C2C95 /* Navigate3.swift */; };
 		AAF34BC926FD82F6007DF865 /* TypeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAF34BC826FD82F6007DF865 /* TypeView.swift */; };
 /* End PBXBuildFile section */
 
@@ -52,7 +56,11 @@
 		AA442B0926FF4D850079DC18 /* DateChinese.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateChinese.swift; sourceTree = "<group>"; };
 		AA5DB60D26FB8FD7003501D2 /* SlideLeftMenu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SlideLeftMenu.swift; sourceTree = "<group>"; };
 		AA74B9DB26F9A66900ED6EE7 /* WebView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebView.swift; sourceTree = "<group>"; };
+		AA90866E27112C9000524711 /* NavigationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationView.swift; sourceTree = "<group>"; };
 		AA9B4A9126FCADB400661BF2 /* HelpDevelopersView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelpDevelopersView.swift; sourceTree = "<group>"; };
+		AAB01DE426FF7B9F0044B669 /* Types.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Types.swift; sourceTree = "<group>"; };
+		AAC73EB827130A07005C2C95 /* NavigationView2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationView2.swift; sourceTree = "<group>"; };
+		AAC73EBB27131546005C2C95 /* Navigate3.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Navigate3.swift; sourceTree = "<group>"; };
 		AAF34BC826FD82F6007DF865 /* TypeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TypeView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -109,6 +117,10 @@
 				AA9B4A9126FCADB400661BF2 /* HelpDevelopersView.swift */,
 				3EB85BEB26F8F5C80002E934 /* Assets.xcassets */,
 				3EB85BED26F8F5C80002E934 /* Preview Content */,
+				AAB01DE426FF7B9F0044B669 /* Types.swift */,
+				AA90866E27112C9000524711 /* NavigationView.swift */,
+				AAC73EB827130A07005C2C95 /* NavigationView2.swift */,
+				AAC73EBB27131546005C2C95 /* Navigate3.swift */,
 			);
 			path = WORKX;
 			sourceTree = "<group>";
@@ -230,8 +242,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				AA9B4A9226FCADB400661BF2 /* HelpDevelopersView.swift in Sources */,
+				AAC73EB927130A08005C2C95 /* NavigationView2.swift in Sources */,
 				AA74B9DC26F9A66900ED6EE7 /* WebView.swift in Sources */,
+				AA90866F27112C9000524711 /* NavigationView.swift in Sources */,
+				AAC73EBC27131546005C2C95 /* Navigate3.swift in Sources */,
 				AA5DB60E26FB8FD7003501D2 /* SlideLeftMenu.swift in Sources */,
+				AAB01DE526FF7B9F0044B669 /* Types.swift in Sources */,
 				3EB85BEA26F8F5C70002E934 /* ContentView.swift in Sources */,
 				AA442B0826FF4D310079DC18 /* Todoltem.swift in Sources */,
 				AA32966326FB7F7800BE0C72 /* AboutDevelopersView.swift in Sources */,

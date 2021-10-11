@@ -12,7 +12,11 @@ struct AboutDevelopersView: View {
         VStack{
             
             HStack {
+                
+                Button(action: /*@START_MENU_TOKEN@*/{}/*@END_MENU_TOKEN@*/) {
                     Image(systemName: "rectangle.portrait.and.arrow.right")
+                    
+                }
                        
                 }
                 
@@ -81,19 +85,6 @@ struct AboutDevelopersView: View {
             
         }
         .padding(.bottom)
-        
-        
-            
-                
-            
-                
-        
-        
-        
-        
-        
-        
-        
         
         
         

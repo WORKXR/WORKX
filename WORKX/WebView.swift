@@ -9,7 +9,6 @@ import SwiftUI
 import WebKit //导入框架
 
 
-
 struct WebView : UIViewRepresentable { //使当前结构体遵循UIViewRepresentable协议。使用该协议的实例，可以在SwiftUI中创建和管理UIView对象
     
     

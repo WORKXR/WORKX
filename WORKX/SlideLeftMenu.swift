@@ -7,6 +7,8 @@
 
 import SwiftUI
 
+
+
 struct SlideLeftMenu: View {
    
    //划动偏移量
@@ -105,23 +107,9 @@ struct FeatureView:View {
                        
                        ForEach(0..<50){_ in
                            
-                           HStack{
+                          
                                
-                               Image(systemName: "person")
-                                   .resizable()
-                                   .frame(width: 80, height: 80, alignment: .center)
-                               
-                               VStack(alignment: .leading){
-                                   Text("titletitletitletitletitle")
-                                       .font(.title)
-                                   
-                                   Spacer()
-                                   
-                                   Text("bodybodybodybodybodybody")
-                                       .font(.body)
-                               }
-                               
-                           }
+                           
                            
                        }.redacted(reason: .placeholder)
                    }

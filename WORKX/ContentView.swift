@@ -9,46 +9,48 @@ import SwiftUI
 
 
 struct ContentView: View {
+    
+    @State var isLeftMenu: Bool = false
+    
     var body: some View {
+    
         NavigationView {
-            List {
+            
+        List {
                 // 代办事项列表
                 
-            }.navigationBarTitleDisplayMode(.inline)
+        }.navigationBarTitleDisplayMode(.inline)
             .toolbar {
-                    ToolbarItem(placement: .principal) {
+                ToolbarItem(placement: .navigationBarLeading) {
                         // 顶部工具栏
-                        HStack {
-                            Spacer()
-                            Button(action: {
-                                // 呼出左侧面板
-                                
-                            }) {
-                                Image(systemName: "rectangle.portrait.and.arrow.right")
-                                    .foregroundColor(Color.green)
-                                    .padding(.trailing, 13.0)
-                            }
+                        Button(action: {
                             
-                            Spacer()
-                                .padding(.leading)
+                        }) {
+                            Image(systemName:"rectangle.portrait.and.arrow.right")
+                                .foregroundColor(.green)
+                           }
+                        }
                             
-                                Button(action: {
-                                    // 添加待办事项
-                                    
-                                }) {
-                                    Image(systemName: "plus")
-                                }
+                    ToolbarItem(placement: .navigationBarTrailing) {
+                            // 添加代办事项
+                            Button{
                                 
+                            } label: {
+                                Image(systemName:"plus")
+                                     }
                         
-                        
-                            
-                                
-                               
-                    }
                 }
             }
+            NavigationLink(destination: NextView2(), isActive: $isLeftMenu){EmptyView()}
         }
         .padding(.leading)
+    }
+}
+
+struct NextView2: View {
+    var body: some View {
+        
+        Text("HI")
     }
 }
 
@@ -56,5 +58,6 @@ struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         ContentView()
             .preferredColorScheme(.light)
+    
     }
 }
