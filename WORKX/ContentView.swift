@@ -18,13 +18,18 @@ struct ContentView: View {
             
         List {
                 // 代办事项列表
+            //切换视图
+            NavigationLink(destination: SlideLeftMenu(), isActive: $isLeftMenu){EmptyView()}
                 
         }.navigationBarTitleDisplayMode(.inline)
             .toolbar {
                 ToolbarItem(placement: .navigationBarLeading) {
                         // 顶部工具栏
-                        Button(action: {
                             
+                    
+                        Button(action: {
+                            isLeftMenu = true
+                            print(isLeftMenu)
                         }) {
                             Image(systemName:"rectangle.portrait.and.arrow.right")
                                 .foregroundColor(.green)
@@ -41,9 +46,8 @@ struct ContentView: View {
                         
                 }
             }
-            NavigationLink(destination: NextView2(), isActive: $isLeftMenu){EmptyView()}
+            
         }
-        .padding(.leading)
     }
 }
 
