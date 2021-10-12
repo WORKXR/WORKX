@@ -11,12 +11,15 @@ import SwiftUI
 
 struct SlideLeftMenu: View {
    
+    
+    
    //划动偏移量
    @GestureState var offset:CGFloat = 0
    
    //滑动应该停留在某个点
    //停留点： 屏幕宽度的3/5
-   let maxOffset:CGFloat = UIScreen.main.bounds.width * 3 / 5
+    var maxOffsetValue:CGFloat = 1
+    var maxOffset:CGFloat = UIScreen.main.bounds.width * 1
    
    //滑动展开之后的 offset
    @State var expandOffset:CGFloat = 0
@@ -129,8 +132,15 @@ struct FeatureView:View {
 }
 
 struct SideMenuView:View {
+    
+     @State var isHelpDevelopers: Bool = false
+     @State var isAdOpen: Bool = false
+     @State var SettingsOpen: Bool = false
+    
    var body: some View{
        
+       NavigationView{
+           
        GeometryReader{proxy in
            VStack(alignment:.leading){
                //祖传头像
@@ -147,8 +157,13 @@ struct SideMenuView:View {
                
                //菜单
                
+                //Navigation跳转设置
+               
+                   NavigationLink(destination: AboutDevelopersView(), isActive: $isHelpDevelopers){EmptyView()}
+               NavigationLink(destination: HelpDevelopersView(), isActive: $isHelpDevelopers){EmptyView()}
+               
                HStack{
-                   Button(action:{}){
+                   Button(action:{isHelpDevelopers = true}){
                    Image(systemName: "archivebox")
                        Text("关于作者")
                        }
@@ -156,8 +171,9 @@ struct SideMenuView:View {
                }
                .padding(.top)
                
+              
                HStack{
-                   Button(action: /*@START_MENU_TOKEN@*/{}/*@END_MENU_TOKEN@*/) {
+                   Button(action: {isHelpDevelopers = true}) {
                        Image(systemName: "note.text")
                        Text("广告页面(帮助我们)")
                    }
@@ -197,8 +213,12 @@ struct SideMenuView:View {
            .ignoresSafeArea()
        }
        
+           
+           
+   }
    }
 }
+    
 
 struct SlideLeftMenu_Previews: PreviewProvider {
    static var previews: some View {
