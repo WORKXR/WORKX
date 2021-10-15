@@ -11,16 +11,17 @@ import SwiftUI
 
 struct SlideLeftMenu: View {
    
+    //是否要修改offset
     
     
    //划动偏移量
-   @GestureState var offset:CGFloat = 0
+   @GestureState var offset:CGFloat = 1
    
    //滑动应该停留在某个点
    //停留点： 屏幕宽度的3/5
-    var maxOffsetValue:CGFloat = 1
-    var maxOffset:CGFloat = UIScreen.main.bounds.width * 1
-   
+    var maxOffsetValue:CGFloat = 0.7
+    var maxOffset:CGFloat {UIScreen.main.bounds.width * self.maxOffsetValue} //这里写了我三个小时，干
+    
    //滑动展开之后的 offset
    @State var expandOffset:CGFloat = 0
    
@@ -72,7 +73,7 @@ struct SlideLeftMenu: View {
        ZStack{
            
            //侧边菜单层
-           SideMenuView()
+           SideMenuView(maxOffsetchange: Binding(false) )
            
            //功能区域
            FeatureView()
@@ -137,6 +138,8 @@ struct SideMenuView:View {
      @State var isAdOpen: Bool = false
      @State var SettingsOpen: Bool = false
     
+     @Binding var maxOffsetchange:Bool
+    
    var body: some View{
        
        NavigationView{
@@ -183,7 +186,7 @@ struct SideMenuView:View {
                
                
                HStack{
-                   Button(action: /*@START_MENU_TOKEN@*/{}/*@END_MENU_TOKEN@*/) {
+                   Button(action: {SettingsOpen = true}) {
                        Image(systemName: "gearshape")
                        Text("个人设置")
                    }
@@ -216,6 +219,17 @@ struct SideMenuView:View {
            
            
    }
+       //@State var isHelpDevelopers: Bool = false
+       //@State var isAdOpen: Bool = false
+       //@State var SettingsOpen: Bool = false
+       
+       if(isHelpDevelopers == true || isAdOpen == true || SettingsOpen || true)
+       {
+           
+           
+           
+       }
+       
    }
 }
     

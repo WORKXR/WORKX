@@ -12,6 +12,12 @@ struct Types: View {
     var body: some View {
         VStack{
             
+            Button("注册"){}
+            .frame(width: 250, height: 40)
+            .font(.caption)
+            .foregroundColor(.green)
+            .cornerRadius(20)
+    
             
         }
     }
